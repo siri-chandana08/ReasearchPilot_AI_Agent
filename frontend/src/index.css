@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Cosmic Background for Login Page */
+.cosmic-bg {
+  background: radial-gradient(circle at 30% 50%, rgba(124, 58, 237, 0.25), transparent 40%),
+              radial-gradient(circle at 70% 30%, rgba(79, 70, 229, 0.2), transparent 40%),
+              #070712;
+}
+
+.cosmic-card {
+  background: rgba(15, 17, 32, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
